@@ -26,7 +26,6 @@ type Message = { id: string; from: string; text: string; time: string; attachmen
 type Conversation = { id: string; userId: string; messages: Message[] }
 type Account = { id: string; name: string; email: string; handle: string; city: string; bio: string; avatar: string }
 
-const photo = (id: string, width = 600) => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&q=85`
 const fallbackAvatar = (variant: number) => {
   const palettes = [
     ['#e9dafa', '#8e75c6', '#614781'],
